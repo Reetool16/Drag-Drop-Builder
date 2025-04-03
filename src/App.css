@@ -1,0 +1,48 @@
+.app {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  gap: 10px;
+  padding: 10px;
+}
+
+.sidebar {
+  width: 200px;
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.canvas {
+  flex: 1;
+  background: #ffffff;
+  border: 2px dashed #ccc;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.draggable {
+  cursor: grab;
+  padding: 10px;
+  margin: 5px;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: auto;
+    text-align: center;
+  }
+  .canvas {
+    min-height: 200px;
+  }
+}
