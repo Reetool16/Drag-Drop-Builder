@@ -32,7 +32,12 @@
   background: #ddd;
   border-radius: 5px;
 }
-
+.element {
+  padding: 10px;
+  background: lightblue;
+  border-radius: 5px;
+  margin: 10px;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .app {
